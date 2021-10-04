@@ -25,7 +25,10 @@
 
         function getDeviceInfo() {
             let options = {
-                acceptAllDevices: true
+                filters: [{
+                    name: 'BT05'
+                }]
+                //   acceptAllDevices: true
             }
 
             console.log('Requesting BLE Device Info...')
